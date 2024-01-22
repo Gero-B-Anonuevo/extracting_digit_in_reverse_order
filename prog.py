@@ -2,15 +2,10 @@ import tkinter as tk
 from tkinter import simpledialog
 
 number = tk.simpledialog.askinteger("Hello!", "Input your number: ")
-#reverse_number_string = str(number)[::-1]
-number_str = str(number)
-digit_count = len(number_str)
-resulting_var = ""
+reverse_number_string = str(number)[::-1]
+digit_count = len(reverse_number_string)
 
 while digit_count >= 1:
     digit_position = digit_count - 1
-    specific_digit = number_str[digit_position]
+    print(reverse_number_string[digit_position])
     digit_count = digit_count - 1
-    resulting_var = resulting_var + " " + specific_digit
-
-print(resulting_var)
